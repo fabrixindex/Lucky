@@ -1,0 +1,415 @@
+html {
+    margin: 0%;
+    padding: 0%; }
+  
+  img {
+    max-width: 100%; } 
+    
+/*MAQUETADO INDEX*/
+#body-estructural{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2"
+    "seccion3 seccion3 seccion3"
+    "seccion4 seccion4 seccion4"
+    "footer footer footer";
+    grid-template-columns: repeat();
+}
+
+#header__estructural{
+    grid-area: header;
+}
+
+#body__primer-seccion{
+    grid-area: seccion1;
+}
+
+#body__segunda-seccion{
+    grid-area: seccion2;
+}
+
+#body__tercer-seccion{
+    grid-area: seccion3;
+}
+
+#body__cuarta-seccion{
+  grid-area: seccion4;
+}
+
+#body__footer{
+    grid-area: footer;
+} 
+
+/*MAQUETADO PRODUCTOS*/
+
+#body-estructural-productos{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "titulo titulo titulo"
+  "remeras remeras remeras"
+  "pantalones pantalones pantalones"
+  "footer footer footer";
+}
+
+#header-productos{
+  grid-area: header;
+}
+
+#titulo-nuestros-productos{
+  grid-area: titulo;
+}
+
+#contenedor-remeras{
+  grid-area: remeras;
+}
+
+#contenedor-pantalones{
+  grid-area: pantalones;
+}
+
+#body__footer{
+    grid-area: footer;
+} 
+
+#contenedor-remeras, #contenedor-pantalones{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+#contenedor-pantalones{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*ESTILO PARA CARDS*/
+
+#imagen-productos{
+  height: 24rem;
+  width: 17.87rem;
+}
+
+#titulo-nuestros-productos{
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+}
+
+#titulo-productos{
+  font-family: 'Gloock', serif;
+  font-size: 1.4rem;
+}
+
+#texto-productos{
+  font-family: 'Almarai', sans-serif;
+  font-size: 1.2rem;
+}
+
+#texto-total-carrito, #texto-carrito-vacio{
+  font-family: 'Almarai', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+/*ESTILO PARA OFERTAS*/
+
+.ofertas-productos{
+  color: goldenrod;
+  font-weight: bold;
+}
+
+/*INICIO DE ESTILOS NAV*/
+
+#boton-nav {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    transition: all .5s; }
+
+#boton-nav:hover {
+    background-color: #cad9f7;
+    color: aqua; 
+}
+
+body{
+    background-color: rgb(136, 136, 136);
+}
+
+#logo-nav {
+    width: 12rem;
+    height: 4.5rem;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    margin: auto; }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+
+/*FIN DE ESTILOS NAV*/
+
+/*DARK MODE*/
+
+.darkmode{
+    background-color: black;
+    color: white;
+}
+
+.darkmode .card{
+    color: black;
+}
+.darkmode .modal{
+    color: black;
+}
+
+.lightmode{
+    color: black;
+    background-color: rgb(136, 136, 136);
+}
+
+#boton-modo-oscuro{
+    margin-right: 1rem;
+}
+
+/*BODY SECCION N° 1*/
+
+#fotito{
+    height: 36rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*BODY SECCION N° 2 Y 3*/
+
+#body__segunda-seccion{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+.fotito-seccion-2{
+    height: 35rem;
+    width: 30rem;
+}
+
+.texto-seccion-2,.texto-seccion-3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 6rem;
+    padding-left: 1rem;
+}
+
+.texto-seccion-2{
+    padding-left: 2rem;
+}
+
+#boton-seccion-2,#boton-seccion-3{
+    align-content: center;
+    padding: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 24rem;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+#vinculo1-seccion2, #vinculo1-seccion3{
+  text-decoration: none;
+  color: white;
+}
+
+#body__tercer-seccion{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fotito-seccion-3{
+    height: 40rem;
+    width: 40rem;
+}
+
+.titulo-productos-rem-pan{
+  font-size: 3rem;
+}
+
+/*BODY SECCION N° 4*/
+
+#body__cuarta-seccion{
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr);
+  justify-items: center;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+#foto1-seccion-4, #foto2-seccion-4{
+  width: 38rem;
+  height: 26rem;
+}
+
+#texto1-seccion-4, #texto2-seccion-4{
+  padding-top: 0.5rem;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+
+}
+
+#boton1-seccion-4, #boton2-seccion-4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 15rem;
+}
+
+#vinculo1-seccion4, #vinculo2-seccion4{
+  text-decoration: none;
+  color: white;
+}
+
+/*FOOTER*/
+
+#body__footer, .caja-png, .grupo-1, .grupo-2 {
+    background-color: #454546;
+    width: 100%; }
+  
+  .caja-png,
+  figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+  .logo-footer {
+    width: 15rem;
+    margin-left: 2rem; }
+  
+  .textito-principal-grupo-1,
+  .textito-redes {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin: 0.3rem 4rem;
+    text-decoration: underline; }
+  
+  .textito-redes {
+    text-align: left;
+    margin-left: 2.5rem; }
+  
+  .textito-secundario-grupo-1 {
+    color: #efefef;
+    margin-bottom: 0.5rem 5rem 1rem 5rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: center; }
+  
+  .red-social {
+    margin: 0.5rem 0rem 0.5rem 2.5rem; }
+  
+  #redes {
+    display: inline-block;
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease; }
+  
+  #redes:hover {
+    color: rgb(75, 135, 247); }
+  
+  .grupo-2 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif; }
+
+/*INICIO DE ESTILOS SECCION CONTACTO*/
+
+/*MAQUETADO SECCION CONTACTO*/
+
+#body-estructural-contacto{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "formulario"
+  "footer";
+}
+
+#header-contacto{
+  grid-area: header;
+}
+
+#formulario__seccion{
+  grid-area: formulario;
+  margin-bottom: 3rem;
+  margin-left: 2.5rem;
+}
+
+#body__footer{
+  grid-area: footer;
+}
+
+#titulo-formulario-contacto{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+#botonformulario{
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.letra-mas-linda-contacto{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*SECCION COMENTARIOS*/
+
+#titulo-opiniones{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+#contenedorPeticion{
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+
+#fotito-comentario{
+  width: 13rem;
+  height: 15rem;
+}

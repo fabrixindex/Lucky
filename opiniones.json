@@ -1,0 +1,81 @@
+[
+    {
+        "idopinion": 1,
+        "nombreopinion": "Paola Angelucci",
+        "opinionOpinion": "Amo la calidad de los articulos, super conforme con mi compra!!",
+        "opinionimagen":"persona1-comentario.jpg",
+        "opiniontiempo": "Hace 2 semanas" 
+    },
+
+    {
+        "idopinion": 2,
+        "nombreopinion": "Cristian Avila",
+        "opinionOpinion": "Quiero dar mi opinión sobre la buena atención que me han ofrecido en Lucky, me ha encantado su paciencia, su asesoramiento, su calidad en el trato con el cliente.",
+        "opinionimagen":"persona2-comentario.jpg",
+        "opiniontiempo": "Hace 1 semana" 
+    },
+
+    {
+        "idopinion": 3,
+        "nombreopinion": "Cristina Veron",
+        "opinionOpinion": "Ame los diseños, tan unicos como ustedes!! Volveria a comprar sus productos una y mil veces mas!!",
+        "opinionimagen":"persona3-comentario.jpg",
+        "opiniontiempo": "Hace 3 dias" 
+    },
+
+    {
+        "idopinion": 4,
+        "nombreopinion": "Daniel Caraballo",
+        "opinionOpinion": "Me ha dado mucha alegría poder comprar sus jeans y disfrutarlos noche a noche jejeje. Sigan asi chicos!",
+        "opinionimagen":"persona4-comentario.jpg",
+        "opiniontiempo": "Hace 3 semanas" 
+    },
+
+    {
+        "idopinion": 5,
+        "nombreopinion": "Nancy Cañete",
+        "opinionOpinion": "Productos llenos de personalidad, buena calidad, optima atencion, no se puede pedir nada mas. I love Lucky!",
+        "opinionimagen":"persona5-comentario.jpg",
+        "opiniontiempo": "Hace 1 mes" 
+    },
+
+    {
+        "idopinion": 6,
+        "nombreopinion": "Daniel Parraga",
+        "opinionOpinion": "Desde que compre dos de sus remeras ya no quiero volver a usar productos de otra marca!!",
+        "opinionimagen":"persona6-comentario.jpg",
+        "opiniontiempo": "Hace 2 meses" 
+    },
+
+    {
+        "idopinion": 7,
+        "nombreopinion": "Enrique Miyasky",
+        "opinionOpinion": "Muy buena atencion y excelente la calidad de sus productos!",
+        "opinionimagen":"persona7-comentario.jpg",
+        "opiniontiempo": "Hace 4 dias" 
+    },
+
+    {
+        "idopinion": 8,
+        "nombreopinion": "Cornelio Saavedra",
+        "opinionOpinion": "Antes ir a comprar ropa era un dolor de cabeza para mi, pero desde que conoci a Lucky eso ya no es asi. Todos sus productos me encantaron!",
+        "opinionimagen":"persona8-comentario.jpg",
+        "opiniontiempo": "Hace 10 dias" 
+    },
+
+    {
+        "idopinion": 9,
+        "nombreopinion": "Lucho Nuñez",
+        "opinionOpinion": "Sus pantalones se han vuelto una adiccion para mi, la comodidad que se siente al usarlos es inexplicable. Los felicito! Sigan asi!",
+        "opinionimagen":"persona9-comentario.jpg",
+        "opiniontiempo": "Hace 2 semanas" 
+    },
+
+    {
+        "idopinion": 10,
+        "nombreopinion": "Rafael Bantito",
+        "opinionOpinion": "Excelente la calidad de sus remeras, me hacen sentir muy comodo y seguro de mi mismo!",
+        "opinionimagen":"persona10-comentario.jpg",
+        "opiniontiempo": "Hace 1 mes" 
+    }
+]
