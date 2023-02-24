@@ -99,7 +99,7 @@ const remera21 =new remera (21, "Remera Lady full freedom", "Black", "M", 4299, 
 console.log(remera21)
 remera21.infocompletaRemera()
 
-//DECLARACION DE OBJETOS CON CLASES -- PANTALONES
+//DECLARACION DE OBJETOS PANTALONES
 
 class pantalon{
     constructor(idPantalon, articuloPantalon, colorPantalon, tallePantalon, materialPantalon, precioPantalon, imagenPantalon){
