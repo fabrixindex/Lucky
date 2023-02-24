@@ -49,6 +49,7 @@ html {
   grid-template-areas: 
   "header header header"
   "titulo titulo titulo"
+  "carga carga carga"
   "remeras remeras remeras"
   "pantalones pantalones pantalones"
   "footer footer footer";
@@ -60,6 +61,10 @@ html {
 
 #titulo-nuestros-productos{
   grid-area: titulo;
+}
+
+#carga-productos{
+  grid-area: carga;
 }
 
 #contenedor-remeras{
@@ -81,6 +86,24 @@ html {
   row-gap: 2rem;
 }
 
+@media(max-width:768px){
+  #contenedor-remeras, #contenedor-pantalones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+  }
+}
+
+@media(max-width:412px){
+  #contenedor-remeras, #contenedor-pantalones{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+  }
+}
+
 #contenedor-pantalones{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -100,9 +123,17 @@ html {
   font-size: 3rem;
 }
 
+@media (max-width:412px){
+  #titulo-nuestros-productos{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 #titulo-productos{
   font-family: 'Gloock', serif;
   font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 #texto-productos{
@@ -156,6 +187,18 @@ body{
       opacity: 0; }
     100% {
       opacity: 1; } }
+      
+
+  @media(max-width:768px){
+    #logo-nav{margin-right: 10rem;
+    }
+  }
+    
+
+  @media(max-width:412px){
+    #logo-nav{margin-right: 4.5rem;
+    }
+  }
 
 /*FIN DE ESTILOS NAV*/
 
@@ -186,8 +229,18 @@ body{
 
 #fotito{
     height: 36rem;
+    width: 85rem;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+@media(max-width:412px){
+  #fotito{
+    height: 15rem;
+    width: 15rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /*BODY SECCION N° 2 Y 3*/
@@ -198,9 +251,25 @@ body{
     margin: 3rem;
 }
 
+@media(max-width:412px),(max-width:768px),(max-width:1024px){
+  #body__segunda-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+  }
+}
+
 .fotito-seccion-2{
     height: 35rem;
     width: 30rem;
+}
+
+@media(max-width:412px){
+  .fotito-seccion-2{
+    height: 17.5rem;
+    width: 15rem;
+  }
 }
 
 .texto-seccion-2,.texto-seccion-3{
@@ -208,6 +277,17 @@ body{
     text-align: center;
     padding-top: 6rem;
     padding-left: 1rem;
+}
+
+@media(max-width:412px){
+  .texto-seccion-2, .texto-seccion-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
 }
 
 .texto-seccion-2{
@@ -225,6 +305,20 @@ body{
     font-size: 1.3rem;
 }
 
+@media(max-width:412px){
+  #boton-seccion-2, #boton-seccion-3{
+    font-size: 0.8rem;
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media(max-width:768px),(max-width:1024px){
+  #boton-seccion-2, #boton-seccion-3{
+    margin-left: 15rem;
+  }
+}
+
 #vinculo1-seccion2, #vinculo1-seccion3{
   text-decoration: none;
   color: white;
@@ -239,9 +333,24 @@ body{
     margin-bottom: 3rem;
 }
 
+@media(max-width:412px),(max-width:768px),(max-width:1024px){
+  #body__tercer-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .fotito-seccion-3{
     height: 40rem;
     width: 40rem;
+}
+
+@media(max-width:412px){
+  .fotito-seccion-3{
+    height: 17.5rem;
+    width: 15rem;
+  }
 }
 
 .titulo-productos-rem-pan{
@@ -258,9 +367,24 @@ body{
   margin-left: 2rem;
 }
 
+@media(max-width:412px){
+  #body__cuarta-seccion{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
 #foto1-seccion-4, #foto2-seccion-4{
   width: 38rem;
   height: 26rem;
+}
+
+@media(max-width:412px){
+  #foto1-seccion-4, #foto2-seccion-4{
+    height: 13rem;
+    width: 19rem;
+  }
 }
 
 #texto1-seccion-4, #texto2-seccion-4{
@@ -269,13 +393,32 @@ body{
   font-size: 1.3rem;
   font-family: 'Poppins', sans-serif;
   text-align: justify;
+}
 
+@media(max-width:412px){
+  #texto1-seccion-4, #texto2-seccion-4{
+    font-size: 1rem;
+  }
 }
 
 #boton1-seccion-4, #boton2-seccion-4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   margin-left: 15rem;
+}
+
+@media(max-width:412px){
+  #boton1-seccion-4, #boton2-seccion-4{
+    margin-left: 6rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+} 
+
+@media(max-width:768px),(max-width:1024px){
+  #boton1-seccion-4, #boton2-seccion-4{
+    margin-left: 7rem;
+  }
 }
 
 #vinculo1-seccion4, #vinculo2-seccion4{
@@ -365,6 +508,12 @@ body{
   margin-left: 2.5rem;
 }
 
+@media(max-width:412px){
+  #formulario__seccion{
+    margin-left: 0.5rem;
+  }
+}
+
 #body__footer{
   grid-area: footer;
 }
@@ -376,6 +525,12 @@ body{
   font-weight: bold;
   font-size: 2.5rem;
   text-decoration: underline;
+}
+
+@media(max-width:412px){
+  #titulo-formulario-contacto{
+    font-size: 1.7rem;
+  }
 }
 
 #botonformulario{
@@ -401,6 +556,12 @@ body{
   text-decoration: underline;
 }
 
+@media(max-width:412px){
+  #titulo-opiniones{
+    font-size: 2rem;
+  }
+}
+
 #contenedorPeticion{
   margin-left: 2rem;
   margin-bottom: 2rem;
@@ -409,7 +570,24 @@ body{
   row-gap: 1rem;
 }
 
+@media(max-width:412px){
+  #contenedorPeticion{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 #fotito-comentario{
   width: 13rem;
   height: 15rem;
+}
+
+@media(max-width:412px){
+  #fotito-comenntario{
+    height: 10rem;
+    width: 7.5rem;
+  }
 }

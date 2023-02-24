@@ -11,6 +11,9 @@ const fechaActual = DateTime.now()
 //BOTONES CARRITO
 let bodycarrito = document.getElementById("bodycarrito")
 let botoncarrito = document.getElementById("botoncarrito")
+//CAPTURA PARA LOADER
+let loaderTexto = document.getElementById("loaderTexto")
+let loaderitem = document.getElementById("loaderitem")
 
 //DOM
 
@@ -228,6 +231,12 @@ function calcularTotalCarrito(productosEnCarrito){
     `
     return totalCarrito
 }
+
+//FUNCION PARA LOADER
+setTimeout(()=>{
+    loaderTexto.remove()
+    loaderitem.remove()
+},500)
 
 
 /*SECCION PARA COLOCAR EVENTOS*/
